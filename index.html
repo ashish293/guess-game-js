@@ -21,6 +21,8 @@
 			let input = prompt("Guess a number between 0- 100");
 			let random = Math.round(100 * Math.random());
 			let attempt = 1;
+			let background = document.getElementById("div");
+
 			while (random != input) {
 				if (random > input) {
 					input = prompt("Too low! Try again");
