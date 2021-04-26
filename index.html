@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			let input = prompt("Guess a number");
+			let random = Math.round(100 * Math.random());
+			let attempt = 1;
+			while (random != input) {
+				if (random > input) {
+					input = prompt("Too low! Try again");
+				} else if (random < input) {
+					input = prompt("Too high! Try again");
+				}
+				attempt++;
+			}
+			if (random == input) {
+				alert("Congratulation, you entered the right number on attempt " + attempt);
+			}
+		</script>
+	</body>
+</html>
