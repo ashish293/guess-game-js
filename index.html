@@ -4,7 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link rel="icon" type="image/png" href="https://freepik.cdnpk.net/img/favicons/favicon-16x16.png?v=2018082101" sizes="16x16">
+		<title>Guess game</title>
+		<style>
+			#div img {
+				max-width: 70vw;
+				max-height: 80vh;
+			}
+			#div {
+				text-align: center;
+			}
+		</style>
 	</head>
 	<body>
 		<script>
@@ -21,6 +31,7 @@
 			}
 			if (random == input) {
 				alert("Congratulation, you entered the right number on attempt " + attempt);
+			background.innerHTML = `<img src="background.jpg"><br /><h2>Congratulation You won the game</h2>`;
 			}
 		</script>
 	</body>
